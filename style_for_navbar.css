@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+* {
+    font-family: 'Saira', sans-serif;;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(back.webp);
+}
+
+div.headnavbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    border-bottom: 1px solid rgb(174, 109, 239);
+}
+
+div.navbar{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    align-items: center;
+}
+
+div.logo {
+    text-align: center;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+div.logo img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+div.menu {
+    flex-basis: 50%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+div.menu ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+div.menu ul li a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+div.menu ul li a:hover {
+    background-color: aquamarine;
+    transition: 1s;
+}
+
+div.icones {
+    flex-basis: 30%;
+    text-align: center;
+    padding-left: 20px;
+}
+
+div.icones i:hover {
+    animation: pulse 0.5s infinite;
+}@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+div.icones i:hover{
+    transform: scale(0);
+}
+
+div.icones i{
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Dropdown STARTS */
+
+.menu ul li ul
+{
+  display: none;
+}
+
+.menu ul li:hover ul
+{
+  display: block;
+  position:absolute;
+  margin-top: 5px;
+  background: rgba(174, 109, 239, 0.2);
+  border-radius: 6px;
+  width: auto;
+  padding: 10px 2px;
+  box-shadow: 0px 20px 100px 0px rgba(174, 109, 239, 0.5);
+}
+
+/* Dropdown ENDS */
